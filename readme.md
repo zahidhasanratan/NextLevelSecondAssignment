@@ -1,4 +1,4 @@
-## What is PostgreSQL?
+## 1, What is PostgreSQL?
 
 **উত্তর:**
 
@@ -41,7 +41,7 @@ CREATE TABLE students (
 
 ---
 
-## Explain the Primary Key and Foreign Key concepts in PostgreSQL.
+## 2, Explain the Primary Key and Foreign Key concepts in PostgreSQL.
 
 **উত্তর:**
 
@@ -84,7 +84,7 @@ Data Link বা Relation তৈরি করে
 রেফারেন্স করা রেকর্ড না থাকলে ইনসার্ট করা যায় না
 
 🧪 উদাহরণ:
-sql
+```sql
 Copy
 Edit
 CREATE TABLE courses (
@@ -98,6 +98,7 @@ CREATE TABLE enrollments (
     course_id INT,
     FOREIGN KEY (course_id) REFERENCES courses(course_id)
 );
+```
 এখানে enrollments.course_id কলামটি courses.course_id এর প্রতি রেফার করে। অর্থাৎ, একটি কোর্সে রেজিস্ট্রেশন করতে হলে সেই কোর্সটি courses টেবিলে আগে থেকেই থাকতে হবে।
 
 🎯 কেন গুরুত্বপূর্ণ?
