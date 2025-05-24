@@ -39,9 +39,9 @@ CREATE TABLE students (
 ```
 এখানে students নামে একটি টেবিল তৈরি হয়েছে যেখানে প্রতিটি ছাত্রের নাম, ক্লাস এবং ভর্তি তারিখ সংরক্ষণ করা যাবে।
 
+---
 
-
-## What is the purpose of a database schema in PostgreSQL?
+## Explain the Primary Key and Foreign Key concepts in PostgreSQL.
 
 **উত্তর:**
 
