@@ -134,7 +134,7 @@ INSERT INTO test2 VALUES ('Rakib');
 এখানে শুধু 'Rakib' থাকবে। শেষে কোনো স্পেস-টেস থাকবে না।
 
 
-##4 ,What is the purpose of a database schema in PostgreSQL?
+## 4, What is the purpose of a database schema in PostgreSQL?
 
 ## Schema আসলে কী?
 
@@ -171,3 +171,31 @@ SELECT * FROM hr.employees;
 SELECT * FROM accounts.employees;
 
 ```
+
+## 5, Explain the purpose of the WHERE clause in a SELECT statement.
+
+`WHERE` clause ব্যবহার করা হয় যখন আমরা SELECT, UPDATE, DELETE করার সময় ডেটা থেকে বিশেষ কিছু শর্ত অনুযায়ী ডেটা নিতে বা কাজ করতে চাই।
+
+সোজা ভাষায়, `WHERE` দিয়ে বলে দিতে পারি, "সব ডেটা না নিয়ে, শুধু যেগুলো আমার শর্ত মেটায়, সেগুলোই নিয়ে আসো বা কাজ করো।"
+
+### উদাহরণ:
+
+```sql
+SELECT * FROM students WHERE class = 10;
+```
+এখানে students টেবিল থেকে শুধু সেইসব ছাত্রের তথ্য দেখাবে যাদের ক্লাস ১০।
+
+আরেকটা উদাহরণ:
+```sql
+
+
+SELECT * FROM employees WHERE salary > 30000;
+```
+এখানে সেলেক্ট করবে শুধুমাত্র যাদের বেতন ৩০০০০ এর বেশি।
+
+মূল কাজ:
+ডেটা ফিল্টার করা
+
+নির্দিষ্ট শর্ত অনুযায়ী রেকর্ড বেছে নেওয়া
+
+বড় বড় টেবিল থেকে দরকারি ডেটা দ্রুত পাওয়া
